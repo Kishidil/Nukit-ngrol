@@ -1,4 +1,4 @@
-# Yengil Alpine bazasidan foydalanamiz
+0# Yengil Alpine bazasidan foydalanamiz
 FROM alpine:latest
 
 # Kerakli paketlarni o‘rnatamiz
@@ -8,7 +8,7 @@ RUN apk add --no-cache openjdk17 curl bash jq
 WORKDIR /nukkit
 
 # Nukkit serverni yuklab olamiz
-RUN curl -o nukkit.jar https://ci.nukkitx.com/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar
+RUN curl -o nukkit.jar https://motci.cn/job/Nukkit-MOT/job/master/lastSuccessfulBuild/artifact/target/Nukkit-MOT-SNAPSHOT.jar
 
 # EULA va server sozlamalarini yozamiz
 RUN echo "online-mode=false" > server.properties
